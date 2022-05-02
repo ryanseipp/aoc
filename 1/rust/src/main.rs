@@ -10,7 +10,7 @@ fn main() {
         .map(|x| x.parse().expect("An integer was expected"))
         .collect();
 
-    // let resunt = count_larger_measurements(&depths);
+    // let result = count_larger_measurements(&depths);
     let result = count_three_larger(&depths);
 
     println!("{} depths with increasing measurements.", result);

@@ -20,7 +20,7 @@ Challenge is completed and unit tested
 Day | Rust | Go | C | C++ | C# | Haskell | Typescript
 ---|---|---|---|---|---|---|---
 1 |:heavy_check_mark:|:heavy_check_mark:| | | | | 
-2 | | | | | | | 
+2 |:heavy_check_mark:| | | | | | 
 3 | | | | | | | 
 4 | | | | | | | 
 5 | | | | | | | 
@@ -52,7 +52,7 @@ Times in parenthesis are the benchmarked time of part two, where applicable.
 Day | Rust | Go | C | C++ | C# | Haskell | Typescript
 ---|---|---|---|---|---|---|---
 1 | 1.4140 us (4.1781 us) | 1.012 us (12.831 us) | | | | |
-2 | | | | | | |
+2 | 49.256 us (49.187 us) | | | | | |
 3 | | | | | | |
 4 | | | | | | |
 5 | | | | | | |
