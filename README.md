@@ -53,7 +53,7 @@ Results are in the format: parse_time / part1_time / part2_time
 Day | Rust | Go | C | C++ | C# | Haskell | Typescript
 ---|---|---|---|---|---|---|---
 1 | 1.4140 us (4.1781 us) | 1.012 us (12.831 us) | | | | |
-2 | 49.256 us (49.187 us) | | | | | |
+2 | 49.533 us / 1.0141 us / 1.4103 us | | | | | |
 3 | 14.066 us / 83.663 us / 54.752 us | | | | | |
 4 | | | | | | |
 5 | | | | | | |

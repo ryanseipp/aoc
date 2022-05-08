@@ -1005,17 +1005,23 @@ fn benchmark(c: &mut Criterion) {
         String::from("forward 8"),
     ];
 
-    c.bench_with_input(BenchmarkId::new("position", "real"), &data, |b, d| {
+    c.bench_with_input(BenchmarkId::new("parse_directions", "real"), &data, |b, d| {
         b.iter(|| {
-            let directions = parse_directions(d);
-            return determine_position(&directions);
+            return parse_directions(d);
         })
     });
 
-    c.bench_with_input(BenchmarkId::new("position_with_aim", "real"), &data, |b, d| {
+    let directions = parse_directions(&data);
+
+    c.bench_with_input(BenchmarkId::new("position", "real"), &directions, |b, d| {
         b.iter(|| {
-            let directions = parse_directions(d);
-            return determine_position_with_aim_tracking(&directions);
+            return determine_position(&d);
+        })
+    });
+
+    c.bench_with_input(BenchmarkId::new("position_with_aim", "real"), &directions, |b, d| {
+        b.iter(|| {
+            return determine_position_with_aim_tracking(&d);
         })
     });
 }
